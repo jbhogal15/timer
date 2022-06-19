@@ -5,7 +5,7 @@ const alarm = function(input) {
   let inputNum = input.map(element => Number(element));
   let timeStamp = inputNum;
   for (const t of timeStamp) {
-    if (t < 0) {
+    if (t <= 0) {
       continue;
     }
     if (isNaN(t)) {
@@ -17,7 +17,7 @@ const alarm = function(input) {
   }
 };
 
-console.log(alarm(input));
+alarm(input);
 
 
 
